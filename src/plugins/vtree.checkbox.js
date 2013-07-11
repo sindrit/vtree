@@ -51,6 +51,9 @@
 							if (that.uncheckBehaviour === "uncheckChildren" && !node.isChecked){
 								child.uncheck(true);
 							}
+				                        if (that.disableBehaviour === "disableChildren" && node.isDisabled){
+				                            child.disable();
+				                        }
 						}
 
 					// after initialization, we set the initial checked nodes and initial disabled nodes
